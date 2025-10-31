@@ -106,7 +106,7 @@ contract SimpleAuction {
         ended = true;
         emit AuctionEnded(highestBidder, highestBid);
 
-        // 将钱转给受益人
+        // 将钱发给受益人
         beneficiary.transfer(highestBid);
     }
 }
